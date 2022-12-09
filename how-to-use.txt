@@ -1,5 +1,7 @@
 git clone
-git submodule update --init
+git submodule update --init    //Note:every time run this command, patch should be applied again.
+
+
 
 tortoisegit ->apply patch -> select  patches in patch folder ->  apply
 
@@ -11,3 +13,6 @@ cd .build
 cmake .. -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=path-to-store-lib  -DCMAKE_CXX_FLAGS="/utf-8" -DCMAKE_C_FLAGS="/utf-8" -DCMAKE_EXE_LINKER_FLAGS="/manifest:no" -DCMAKE_MODULE_LINKER_FLAGS="/manifest:no" -DCMAKE_SHARED_LINKER_FLAGS="/manifest:no"
 
 cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=path-to-store-lib  -DCMAKE_CXX_FLAGS="/utf-8" -DCMAKE_C_FLAGS="/utf-8" -DCMAKE_EXE_LINKER_FLAGS="/manifest:no" -DCMAKE_MODULE_LINKER_FLAGS="/manifest:no" -DCMAKE_SHARED_LINKER_FLAGS="/manifest:no" -DCMAKE_DEBUG_POSTFIX="d"
+
+
+
